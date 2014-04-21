@@ -14,10 +14,12 @@
 
 ifeq ($(BOARD_VENDOR),htc)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),pyramid)
 
 LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+endif
 endif
 endif
